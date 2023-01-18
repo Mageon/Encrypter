@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*, div{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+
+body{
+  background: #F3F5FC;
+  max-width: 1440px;
+  max-height: 1024px;
+}
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 48px;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.textcontainer {
+  
+  position: absolute;
+  width: 680px;
+  height: 650px;
+  left: 240px;
+  top: 168px;
+  
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+
+  color: #0A3871;
+  resize:none;
+  border: none;
+  background: #F3F5FC
+}
+
+.tip3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 229px;
+  height: 18px;
+  left: 240px;
+  top: 851px;
+}
+
+.tip3 span{
+  width: 205px;
+  height: 18px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057cc;
+  /* opacity: 0.8;  o cc al final del color en HEX*/
+}
+
+
+
+.botones{
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 885px;  
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+}
+
+.encriptar{
+  width: 328px;
+  height: 67px;
+
+  /* Dark blue/dark-blue-300 */
+  background: #0A3871;
+  border-radius: 24px;
+  border: none;
+  color: #FFFFFF;
+  
+}
+
+.desencriptar{
+  width: 328px;
+  height: 67px;
+
+  /* Light gray */
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+}
+
+
+
+.resultado{
+  position: absolute;
+  width: 400px;
+  height: 944px;
+  left: 1000px;
+  top: 40px;
+
+  /* White */
+  background: #FFFFFF;
+
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);  
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+
+.tip1{
+  width: 336px;
+  height: 58px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+    
+  color: #343A40;
+  text-align: center;
+}
+
+.tip2{
+  width: 336px;
+  height: 48px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+    
+  color: #495057;
+  text-align: center;
+}
+
+.evento{
+  display: none;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.textoResultante{
+  width: 336px;
+  height: 780px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.copiar{  
+  width: 336px;
+  height: 67px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  color: #0A3871;
+}
+
+
+.modalCopiado{
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  /* 400 */
+  /* top: 432px; */
+  /* 944 */
+  /* left: 150px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100px;
+  height: 80px;
+  background: #0A3871;
+  color: #FFFFFF;
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+}
+
+@keyframes show {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes hide {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.show{
+  animation-name: show;
+  animation-duration: 3s;
+}
+.hide{
+  animation-name: hide;
+  animation-duration: 3s;
+}

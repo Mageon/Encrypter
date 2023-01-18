@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/reset.css">
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="./script.js"></script>
+  <title>Challenge ONE - Encriptador de Texto</title>
+</head>
+<body>
+  <span class="logo">
+    <img src="./src/Logo.png" alt="">
+  </span>
+
+  <textarea class="textcontainer" placeholder="Ingrese el texto aqui" >aitoy</textarea>
+
+  <div class="tip3">
+    <img src="./src/exclamacionsvg.svg" alt="Exclamacion">
+    <span>Solo letras minúsculas y sin acentos</span>
+  </div>
+  <div class="botones">
+    <button class="encriptar" onclick="encriptar(document.querySelector('.textcontainer').value)">Encriptar</button>
+    <button class="desencriptar" onclick="desencriptar(document.querySelector('.textcontainer').value)">Desencriptar</button>
+  </div>
+
+  <div class="resultado">
+    <div class="tips">
+      <img src="./src/Muñeco.svg" alt="Muñeco">
+      <p class="tip1">Ningun Mensaje fue encontrado</p>
+      <p class="tip2">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </div>
+    <div class="evento">
+      <div class="textoResultante"></div>
+      <button class="copiar" onclick="copiarAclipboard()">Copiar</button>
+    </div>
+    <div class="modalCopiado show">Texto Copiado</div>
+    <div class="modalCopiado2 show">Error al copiar Texto</div>
+  </div>
+
+  <div name="rodapie"></div>
+  
+</body>
+</html>
