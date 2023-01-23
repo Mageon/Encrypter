@@ -10,36 +10,44 @@
   <title>Challenge ONE - Encriptador de Texto</title>
 </head>
 <body>
-  <span class="logo">
-    <img src="./src/Logo.png" alt="">
-  </span>
 
-  <textarea class="textcontainer" placeholder="Ingrese el texto aqui" >aitoy</textarea>
-
-  <div class="tip3">
-    <img src="./src/exclamacionsvg.svg" alt="Exclamacion">
-    <span>Solo letras minúsculas y sin acentos</span>
-  </div>
-  <div class="botones">
-    <button class="encriptar" onclick="encriptar(document.querySelector('.textcontainer').value)">Encriptar</button>
-    <button class="desencriptar" onclick="desencriptar(document.querySelector('.textcontainer').value)">Desencriptar</button>
-  </div>
-
-  <div class="resultado">
-    <div class="tips">
-      <img src="./src/Muñeco.svg" alt="Muñeco">
-      <p class="tip1">Ningun Mensaje fue encontrado</p>
-      <p class="tip2">Ingresa el texto que desees encriptar o desencriptar.</p>
+  <div class="header"></div>
+  <div class="main">
+    <div class="logo col-2 col-s-12">
+      <img src="./src/Logo.svg" alt="Logo">
     </div>
-    <div class="evento">
-      <div class="textoResultante"></div>
-      <button class="copiar" onclick="copiarAclipboard()">Copiar</button>
+
+    <div class="mid col-6 col-s-12">
+      <textarea class="textcontainer col-12 col-s-12" placeholder="Ingrese el texto aqui" ></textarea>
+      <div class="advice col-12 col-s-12">
+        <img src="./src/exclamacionsvg.svg" alt="Exclamacion">
+        <span>Solo letras minúsculas y sin acentos</span>
+      </div>
+      <div class="botones col-12 col-s-12">
+        <button class="encriptar" onclick="encriptar(document.querySelector('.textcontainer').value)">Encriptar</button>
+        <button class="desencriptar" onclick="desencriptar(document.querySelector('.textcontainer').value)">Desencriptar</button>
+      </div>
     </div>
-    <div class="modalCopiado show">Texto Copiado</div>
-    <div class="modalCopiado2 show">Error al copiar Texto</div>
+  
+    <div class="res col-4 col-s-12">
+      <div class="resultado">
+        <div class="tips">
+          <img src="./src/Muñeco.svg" alt="Muñeco">
+          <p class="tip1">Ningun Mensaje fue encontrado</p>
+          <p class="tip2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="evento">
+          <textarea class="textoResultante"></textarea>
+          <button class="copiar col-s-12" onclick="copiarAclipboard()">Copiar</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div name="rodapie"></div>
+  <div class="piePagina col-12">
+    <p class="item1">ALURA - LATAM - ENCRIPTADOR</p>
+    <p class="item2">Web creada por Axel Alejandro Quiñones Gómez 2023</p>
+  </div>
   
 </body>
 </html>
